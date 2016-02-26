@@ -753,6 +753,7 @@ can_read_key:
 		ret = key_validate(key);
 		if (ret == 0)
  			ret = key->type->read(key, buffer, buflen);
+			ret = key->type->read(key, buffer, buflen);
 		up_read(&key->sem);
 	}
 

@@ -1,6 +1,10 @@
 VERSION = 3
 PATCHLEVEL = 10
+<<<<<<< HEAD
 SUBLEVEL = 101
+=======
+SUBLEVEL = 96
+>>>>>>> 2e4e5f1... Linux 3.10.61 to Linux 3.10.96
 EXTRAVERSION =
 NAME = TOSSUG Baby Fish
 
@@ -270,10 +274,12 @@ else
 HOSTCFLAGS   = -Wall -Wmissing-prototypes -Wstrict-prototypes -Ofast -fomit-frame-pointer -std=gnu89 -floop-nest-optimize
 HOSTCXXFLAGS = -Ofast
 endif
+<<
 HOSTCFLAGS   = -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89
 HOSTCXXFLAGS = -O2
 HOSTCFLAGS   = -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89
 HOSTCXXFLAGS = -O2
+
 
 # Decide whether to build built-in, modular, or both.
 # Normally, just do built-in.
