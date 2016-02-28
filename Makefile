@@ -1,10 +1,6 @@
 VERSION = 3
 PATCHLEVEL = 10
-<<<<<<< HEAD
-SUBLEVEL = 101
-=======
-SUBLEVEL = 96
->>>>>>> 2e4e5f1... Linux 3.10.61 to Linux 3.10.96
+SUBLEVEL = 97
 EXTRAVERSION =
 NAME = TOSSUG Baby Fish
 
