@@ -7,8 +7,3 @@ on fs
     chmod 0771 /cpefs
     restorecon_recursive /cpefs
 
-    #For GTS WWD test
-    chmod 0744 /efs/sec_efs/iss
-    chmod 0744 /efs/sec_efs/logguard
-    chmod 0744 /efs/sec_efs/logguard/files
-

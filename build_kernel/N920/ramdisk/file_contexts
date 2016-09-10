@@ -1460,6 +1460,10 @@
 /system/bin/sysprof	u:object_r:sysprof_exec:s0
 /system/bin/sysmon	u:object_r:sysmon_exec:s0
 /system/bin/tima_dump_log	u:object_r:tima_dump_exec:s0
+
+# for DDC(Dynamic Domain Change)
+/system/bin/trustonic_tee_proxy u:object_r:trustonic_tee_proxy_exec:s0
+
 /system/bin/tlc_server	u:object_r:tlc_server_exec:s0
 /system/bin/tunman	u:object_r:tunman_exec:s0
 /system/bin/otp_server	u:object_r:otp_server_exec:s0
@@ -1900,6 +1904,3 @@
 /system/bin/OneSegDsmcc            u:object_r:oneseg_mw_exec:s0
 /system/bin/OneSegTsDemux            u:object_r:oneseg_mw_exec:s0
 /system/bin/SDtvService            u:object_r:oneseg_mw_exec:s0
-
-# SuperSU
-/su(/.*)? u:object_r:system_file:s0

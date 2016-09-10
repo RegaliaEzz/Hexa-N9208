@@ -112,9 +112,6 @@ on post-fs-data
 #Private Mode
     mkdir /mnt/shell/privatemode 0700 system system
     mkdir /storage/Private 0000 system system	
-    mkdir /data/privatemode 0770 system system
-    chown system system /data/privatemode
-    restorecon /data/privatemode
 
 # permission for CHARGING
    chown system radio /sys/class/power_supply/battery/batt_discharging_check
@@ -123,6 +120,11 @@ on post-fs-data
    chown system radio /sys/class/power_supply/battery/batt_discharging_ntc_adc
    chown system radio /sys/class/power_supply/battery/batt_self_discharging_control
    chown system radio /sys/class/power_supply/battery/batt_inbat_wireless_cs100
+
+#Private Mode
+    mkdir /data/privatemode 0770 system system
+    chown system system /data/privatemode
+    restorecon /data/privatemode
 
 #NFC : create data/nfc for nv storage
     mkdir /data/nfc 0700 nfc nfc
@@ -407,6 +409,11 @@ on boot
 
 #MST HW Support
     setprop ro.mst.support 1
+
+#Private Mode
+service privatemode /system/bin/sdcard -r /data/privatemode /mnt/shell/privatemode 1000 1000
+    class late_start
+    oneshot
 
 on fs
     mount_all /fstab.samsungexynos7420

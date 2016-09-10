@@ -1,3 +1,4 @@
+import /init.d_support.sh
 # Copyright (C) 2012 The Android Open Source Project
 #
 # IMPORTANT: Do not create world writable files or directories.
@@ -1652,10 +1653,3 @@ on property:service.vpnclientd.enable=0
 # Reactivation lock
 	service reactived /system/bin/reactived
 	class late_start
-
-# init.d support enabler
-service sysinit /system/bin/logwrapper /system/xbin/busybox run-parts /system/etc/init.d
-    class late_start
-    user root
-    group shell
-    oneshot   
