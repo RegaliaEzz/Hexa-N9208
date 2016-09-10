@@ -5,7 +5,7 @@ EXTRAVERSION =
 NAME = TOSSUG Baby Fish
 
 #TOOLCHAIN_DIR = $(CURDIR)/toolchain/aarch64-linux-android-6.0-kernel/bin/aarch64-linux-android-
-TOOLCHAIN_DIR = /home/regalia/hexa/aarch64-linux-android-6.0-kernel/bin/aarch64-linux-android-
+TOOLCHAIN_DIR = /home/regalia/hexa/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-
 
 ifdef CONFIG_WITH_CCACHE
 ccache := ccache
@@ -270,7 +270,6 @@ else
 HOSTCFLAGS   = -Wall -Wmissing-prototypes -Wstrict-prototypes -Ofast -fomit-frame-pointer -std=gnu89 -floop-nest-optimize
 HOSTCXXFLAGS = -Ofast
 endif
-<<
 HOSTCFLAGS   = -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89
 HOSTCXXFLAGS = -O2
 HOSTCFLAGS   = -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu89
