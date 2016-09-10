@@ -62,7 +62,7 @@ fi
 
 # set build variables
 BK=build_kernel
-export LOCALVERSION=~HEXA-SMN9208-UBER6.0
+export LOCALVERSION=~HEXA-SMN9208-UBER5.3
 export KCONFIG_NOTIMESTAMP=true
 export ARCH=arm64;
 export SUB_ARCH=arm64;
@@ -84,7 +84,7 @@ export TMPFILE=`mktemp -t`;
 
 
 # system compiler
-export CROSS_COMPILE=/home/regalia/hexa/aarch64-linux-android-6.0-kernel/bin/aarch64-linux-android-
+export CROSS_COMPILE=/home/regalia/hexa/aarch64-linux-android-5.3-kernel/bin/aarch64-linux-android-
 
 
 # CPU Core
