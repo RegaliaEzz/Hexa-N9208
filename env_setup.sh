@@ -62,7 +62,7 @@ fi
 
 # set build variables
 BK=build_kernel
-export LOCALVERSION=~HEXA-SMN9208-UBER5.3
+export LOCALVERSION=~HEXA-N9208-v2
 export KCONFIG_NOTIMESTAMP=true
 export ARCH=arm64;
 export SUB_ARCH=arm64;
